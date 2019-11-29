@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-test",
+  "version": "1.0.0",
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "node-red": "^1.0.3",
+    "node-red-node-test-helper": "^0.2.3"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "src/index.js",
+  "node-red": {
+    "nodes": {
+      "your-node": "src/index.js"
+    }
+  },
+  "scripts": {
+    "test": "mocha \"test/**/*.js\"",
+    "test:watch": "mocha \"test/**/*.js\" --watch"
+  }
+}
